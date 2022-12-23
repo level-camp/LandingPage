@@ -11,6 +11,7 @@ Sidebar Styles
     height: 34px;
     pointer-events: none;
     transition: 0.1s;
+    direction: rtl;
 
     > * {
         pointer-events: none !important;
@@ -90,11 +91,12 @@ Sidebar Styles
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
-    transform: translateX(-281px);
+    right: 0;
+    transform: translateX(281px);
     transition: all 0.3s;
     z-index: 10000;
     overflow-y: auto;
+    direction: rtl;
 
     &.is-active {
         transform: translateX(0);
@@ -214,12 +216,13 @@ Sidebar Styles
                             &:after {
                                 position: absolute;
                                 top: 20px;
-                                right: 30px;
+                                left: 30px;
                                 content: "\e5cc";
                                 color: $white;
                                 transition: all 0.5s;
                                 font-weight: 200 !important;
                                 font-size: 1.6rem;
+                                transform: rotate(180deg);
                             }
                         }
                     }

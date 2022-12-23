@@ -2,9 +2,7 @@
     aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
-            <a class="navbar-item" href="https://cssninja.io">
-                <img src="/img/logo/fresh-alt.svg" alt="" width="112" height="28">
-            </a>
+            
 
             <a @click="openSidebar()" class="navbar-item is-hidden-desktop is-hidden-tablet">
                 <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;" :class="{
@@ -35,14 +33,15 @@
                         </span>
                     </span>
             </div>
+           
         </div>
-
+       
         <div id="navbar-menu" class="navbar-menu is-static" :class="{
                 'is-active': mobileOpen,
                 '': !mobileOpen
             }">
 
-            <div class="navbar-start">
+            <div class="navbar-end">
                 <a @click="openSidebar()" class="navbar-item is-hidden-mobile">
                     <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;" :class="{
                             'open': $store.app.isSiderbarOpen,
@@ -60,9 +59,11 @@
                         <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
                     </div>
                 </a>
+                <a class="navbar-item" href="https://cssninja.io">
+                    <img src="/img/logo/fresh-alt.svg" alt="" width="112" height="28">
+                </a>
             </div>
-
-            <div class="navbar-end">
+                <div class="navbar-start">
                 <a href="#" class="navbar-item is-secondary">
                     قالب ها
                 </a>

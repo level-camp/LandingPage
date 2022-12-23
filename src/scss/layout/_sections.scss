@@ -6,6 +6,7 @@ Section Styles
 .section {
     position: relative;
     overflow-x: hidden !important;
+    direction: rtl;
 
     &:focus {
         outline: none !important;
@@ -78,6 +79,10 @@ Section Styles
     &.is-centered {
         margin: 0 auto;
     }
+}
+
+.contact-section {
+    direction: ltr !important;
 }
 
 //Wrapper
