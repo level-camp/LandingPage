@@ -1,6 +1,7 @@
 {
   "name": "fresh",
   "version": "4.1.0",
+  "homepage": "https://level-camp.github.io/LandingPage/",
   "description": "Fresh - Bulma + Alpine JS landing page",
   "author": {
     "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
